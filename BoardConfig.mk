@@ -21,6 +21,8 @@ LOCAL_PATH := device/alcatel/5042d
 TARGET_BOARD_PLATFORM := msm8916
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno306
 
+TARGET_SPECIFIC_HEADER_PATH := device/alcatel/5042d/include
+
 USE_CAMERA_STUB := false
 BOARD_USES_GENERIC_AUDIO := true
 
@@ -100,8 +102,6 @@ TARGET_QCOM_NO_FM_FIRMWARE := false
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 
-# Lights
-
 # Liblight
 TARGET_PROVIDES_LIBLIGHT := true
 
@@ -145,6 +145,9 @@ BOARD_USES_QC_TIME_SERVICES := true
 ifneq ($(QCPATH),)
 BOARD_USES_QCNE := true
 endif
+
+# Fonts
+SMALLER_FONT_FOOTPRINT := true
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file

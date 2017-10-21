@@ -62,7 +62,8 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8916 \
-    libmm-qcamera
+    libmm-qcamera \
+    libsurfaceflinger_client
 
 # Filesystem
 PRODUCT_PACKAGES += \
@@ -117,7 +118,8 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8916
+    lights.msm8916 \
+    lights.alto45
 
 # GPS
 PRODUCT_PACKAGES += \

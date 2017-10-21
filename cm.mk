@@ -19,6 +19,8 @@ PRODUCT_RELEASE_NAME := 5042d
 TARGET_SCREEN_WIDTH := 480
 TARGET_SCREEN_HEIGHT := 854
 
+DEVICE_PACKAGE_OVERLAYS += device/alcatel/5042d/overlay
+
 $(call inherit-product, device/alcatel/5042d/full_5042d.mk)
 
 # Inherit some common CM stuff.
