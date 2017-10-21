@@ -1,21 +1,21 @@
 # Bare-bones system.prop
 
-ro.sf.lcd_density=320
+ro.sf.lcd_density=240
 com.qc.hardware=true
 debug.qc.hardware=true
-ro.product.model=LenovoA6000-4gLTE-In
-ro.product.brand=lenovo
-ro.product.name=a6000
-ro.product.device=a6000
+ro.product.model=Alcatel-5042d-4gLTE-In
+ro.product.brand=alcatel
+ro.product.name=5042d
+ro.product.device=5042d
 ro.product.board=msm8916
 ro.product.cpu.abi=armeabi-v7a
 ro.product.cpu.abi2=armeabi
 ro.product.cpu.abilist=armeabi-v7a,armeabi
 ro.product.cpu.abilist32=armeabi-v7a,armeabi
 ro.product.cpu.abilist64=
-ro.product.manufacturer=lenovo
+ro.product.manufacturer=alcatel
 ro.board.platform=msm8916
-ro.build.product=a6000
+ro.build.product=5042d
 
 #rild.libpath=/system/lib/libreference-ril.so
 rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
@@ -32,8 +32,8 @@ persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
 
-# Start in cdma mode
-ro.telephony.default_network=17
+# fm mode
+ro.telephony.default_network=10
 
 #ro.hdmi.enable=true
 #tunnel.decode=true
@@ -88,6 +88,7 @@ ro.qualcomm.cabl=0
 # System props for telephony
 # System prop to turn on CdmaLTEPhone always
 telephony.lteOnCdmaDevice=0
+telephony.lteOnGsmDevice=1
 persist.omh.enabled=false
 
 #
@@ -141,28 +142,7 @@ ro.min_freq=800000
 #PPPOE config enable
 ro.config.pppoe_enable=1
 
-#caiyebo@201420140804 for lenovo ROM/RAM/CPU info
-ro.lenovo.cpucore = 4
-ro.lenovo.cpuspeed = 1.2GHZ
-ro.lenovo.ram = 1GB
-ro.lenovo.rom = 8GB
-#caiyebo@201420140804 for lenovo ROM/RAM/CPU info
-
-#wt custom bluetooth name
-ro.bluetooth.name=LENOVO-BT
-#wt custom bluetooth name
-
-#wt custom default
-ro.lenovo.cta=false
-ro.lenovo.device=phone
-ro.lenovo.sim=dsds
-ro.lenovo.operator=open
-ro.lenovo.platform=qualcomm
-ro.lenovo.bqb=no
-ro.lenovo.wificert=no
-ro.lenovo.signalbars=five
-ro.lenovo.adb=apkctl
-ro.lenovo.series=Lenovo A6000
+ro.bluetooth.name=AlcatelPOP2
 
 #
 # ADDITIONAL_BUILD_PROPERTIES
@@ -172,7 +152,7 @@ ro.com.android.mobiledata=false
 ro.vendor.extension_library=/vendor/lib/libqc-opt.so
 persist.sys.logkit.ctrlcode=0
 persist.backgrounddata.enable=false
-persist.lenovo.ltetype=SGLTE
+persist.alcatel.ltetype=SGLTE
 swe.reverie_text_shaper=1
 persist.gps.qc_nlp_in_use=1
 persist.loc.nlp_name=com.qualcomm.services.location

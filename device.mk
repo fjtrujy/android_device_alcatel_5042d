@@ -14,11 +14,11 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/lenovo/a6000
+LOCAL_PATH := device/alcatel/5042d
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product-if-exists, vendor/lenovo/a6000/a6000-vendor.mk)
+$(call inherit-product-if-exists, vendor/alcatel/5042d/5042d-vendor.mk)
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
@@ -72,7 +72,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg
 
-# lenovo
+# alcatel
 PRODUCT_PACKAGES += \
     charge_only_mode
 

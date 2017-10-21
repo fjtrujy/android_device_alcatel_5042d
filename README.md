@@ -1,4 +1,4 @@
-# android_device_lenovo_a6000
+# android_device_alcatel_5042d
 
-still working. might finish up soon.
-# android_device_lenovo_a6000
+Let's see if we are able to make it work.
+# android_device_alcatel_5042d

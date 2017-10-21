@@ -13,22 +13,22 @@
 # limitations under the License.
 
 # Release name
-PRODUCT_RELEASE_NAME := a6000
+PRODUCT_RELEASE_NAME := 5042d
 
 # Boot animation
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 480
+TARGET_SCREEN_HEIGHT := 854
 
-$(call inherit-product, device/lenovo/a6000/full_a6000.mk)
+$(call inherit-product, device/alcatel/5042d/full_5042d.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := a6000
-PRODUCT_NAME := cm_a6000
-PRODUCT_BRAND := lenovo
-PRODUCT_MODEL := a6000
-PRODUCT_MANUFACTURER := lenovo
+PRODUCT_DEVICE := 5042d
+PRODUCT_NAME := cm_5042d
+PRODUCT_BRAND := alcatel
+PRODUCT_MODEL := 5042d
+PRODUCT_MANUFACTURER := alcatel
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0

@@ -1,2 +1,2 @@
-add_lunch_combo pac_a6000-userdebug
-add_lunch_combo cm_a6000-userdebug
+add_lunch_combo pac_5042d-userdebug
+add_lunch_combo cm_5042d-userdebug
